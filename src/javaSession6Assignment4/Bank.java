@@ -1,7 +1,8 @@
 package javaSession6Assignment4;
 
 import java.util.Scanner;
-
+//BankAtm class to handle withdraw and deposit
+// Correct naming conventions used
 class BankAtm{
 	private int atmId;
 	private String bankName,location;
@@ -44,7 +45,8 @@ class BankAtm{
 		balance += amt;
 	}
 }
-
+//User defined exception
+// Correct naming conventions used
 class BankATMException extends Exception{
 	/**
 	 * Default versionUID
@@ -62,16 +64,17 @@ class BankATMException extends Exception{
 		return "Sucessful Withrawal";
 	}
 }
-
+//main class
+// Correct naming conventions used
 public class Bank {
 
 	public static void main(String[] args) {
 		System.out.println("Initial ATM Balance: "+BankAtm.balance);
-		BankAtm atm1 = new BankAtm();
+		BankAtm atm1 = new BankAtm(); // 1st instance of BankAtm
 		atm1.withdraw(30000);
-		BankAtm atm2 = new BankAtm();
+		BankAtm atm2 = new BankAtm(); // 2nd instance of BankAtm
 		atm2.withdraw(20000);
-		BankAtm atm3 = new BankAtm();
+		BankAtm atm3 = new BankAtm(); // 3rd instance of BankAtm
 		atm3.withdraw(50000);
 
 	}
